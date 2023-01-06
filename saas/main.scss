@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 50px;
+	height: 100vh;
+	background-color: #333;
+	font-size: 46px;
+}
+.accordion-body {
+	background-color: lightblue;
+	border: 1px solid grey;
+	font-size: 16px;
+	color: rgb(64, 64, 64);
+	word-wrap: break-word;
+}
+
+.accordion {
+	width: 80%;
+	margin: 0 auto;
+}
