@@ -38,6 +38,9 @@ body {
 }
 .header i {
   font-size: 30px;
-  margin:15 15 20 50;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
   color: white;
 }/*# sourceMappingURL=main.css.map */
