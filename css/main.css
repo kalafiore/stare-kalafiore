@@ -22,4 +22,9 @@ body {
 .accordion {
   width: 80%;
   margin: 0 auto;
+}
+
+.description-field {
+  background-color: white;
+  color: tomato;
 }/*# sourceMappingURL=main.css.map */
