@@ -3,7 +3,6 @@ fetch('https://kalafiore.github.io/json/data.json')
 	.then(json => {
 		let myData = JSON.stringify(json)
 		let table = JSON.parse(myData)
-		console.log(table);
 
 		const accordion = document.querySelector(".accordion")
 
