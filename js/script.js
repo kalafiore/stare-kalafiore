@@ -3,6 +3,7 @@ fetch('https://kalafiore.github.io/json/data.json')
 	.then(json => {
 		let myData = JSON.stringify(json)
 		let table = JSON.parse(myData)
+		console.log(table);
 
 		const accordion = document.querySelector(".accordion")
 
@@ -17,9 +18,8 @@ fetch('https://kalafiore.github.io/json/data.json')
 			h1.classList.add("accordion-header")
 			h1.setAttribute("id", `heading${i}`)
 			const button = document.createElement("button")
-			button.classList.add("accordion-button")
-			button.classList.add("collapsed")
-			button.setAttribute("type", "button") //atrybuty, sprawdzic czy mozna kilka w jednym poleceniu
+			button.classList.add("accordion-button", "collapsed")
+			button.setAttribute("type", "button")
 			button.setAttribute("data-bs-toggle", "collapse")
 			button.setAttribute("data-bs-target", `#collapse${i}`)
 			button.setAttribute("aria-expanded", "false")
@@ -32,20 +32,13 @@ fetch('https://kalafiore.github.io/json/data.json')
 			/////ADDING DESCRIPTIONS
 			const descriptionDiv = document.createElement("div")
 			descriptionDiv.setAttribute("id", `collapse${i}`)
-			descriptionDiv.classList.add("accordion-collapse")
-			descriptionDiv.classList.add("collapse")
+			descriptionDiv.classList.add("accordion-collapse", "collapse")
 			descriptionDiv.setAttribute("aria-labelledby", `heading${i}`)
 			descriptionDiv.setAttribute("data-bs-parent", "#accordionExample")
 			const descriptionBody = document.createElement("div")
-			descriptionBody.classList.add("accordion-body")
+			descriptionBody.classList.add("accordion-body", "description-field")
 			descriptionBody.textContent = table[i].description
 			descriptionDiv.append(descriptionBody)
 			accordion.append(descriptionDiv)
 		}
 	})
-
-
-
-
-
-
