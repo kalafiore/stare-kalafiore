@@ -40,5 +40,13 @@ fetch('https://kalafiore.github.io/json/data.json')
 			descriptionBody.textContent = table[i].description
 			descriptionDiv.append(descriptionBody)
 			accordion.append(descriptionDiv)
+			
+						///proba w petli
+			for (let j = 0; j < table[i].series.length; j++) {
+				const descriptionDiv2 = document.createElement("p")
+				descriptionDiv2.classList.add('container')
+				descriptionDiv2.textContent = table[i].series[j]
+				descriptionBody.append(descriptionDiv2)
+			}
 		}
 	})
