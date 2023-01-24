@@ -1,19 +1,22 @@
 [
     {
         "title": "Szkolenie pierwsze",
-        "description": "Zawiera to i tamto i jest w ogole najlepsze "
+        "description": "Zawiera to i tamto i jest w ogole najlepsze ",
+        "series": ["Pierwszy0", "Drugi0", "Trzeci0", "Czwarty0"]
     },
     {
         "title": "Szkolenie drugie",
-        "description": "Jeszcze lepsze niz pierwsze ale kompletnie o czym innym"
+        "description": "Jeszcze lepsze niz pierwsze ale kompletnie o czym innym",
+        "series": ["Pierwszy1", "Drugi1", "Trzeci1", "Czwarty1"]
     },
     {
         "title": "Szkolenie trzecie",
-        "description": "To juz calkiem sadlo maslo"
+        "description": "To juz calkiem sadlo maslo",
+        "series": ["Pierwszy2", "Drugi2", "Trzeci2", "Czwarty2"]
     },
     {
         "title": "Szkolenie czwarte",
-        "description": "No tego to sie nikt nie spodziewa. Igla zyleta dziki waz."
+        "description": "No tego to sie nikt nie spodziewa. Igla zyleta dziki waz.",
+        "series": ["Pierwszy3", "Drugi3", "Trzeci3", "Czwarty3"]
     }
 ]
-
