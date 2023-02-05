@@ -29,7 +29,19 @@ body {
   color: white;
   font-size: 25px;
 }
+
 .track-element-wrapper label {
   margin-top: 1px;
   margin-left: 20px;
+}
+
+input {
+  cursor: pointer;
+}
+
+.checked-list {
+  margin-top: 50px;
+  margin-left: 100px;
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
