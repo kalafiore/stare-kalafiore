@@ -1,46 +1,36 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  height: 100vh;
-  background-color: #333;
-  font-size: 46px;
-}
-
-.accordion-body {
-  background-color: lightblue;
-  border: 1px solid grey;
-  font-size: 16px;
-  color: rgb(64, 64, 64);
-  word-wrap: break-word;
-}
-
-.description-field {
-  background-color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: rgb(223, 242, 255);
-  font-weight: bold;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
+	height: 100vh;
+	background-color: #333;
+	font-size: 46px;
 }
 
 .header {
-  color: white;
-  font-size: 25px;
-}
-.header i {
-  font-size: 30px;
-  margin-left: 50px;
-  margin-top: 15px;
-  margin-right: 20px;
-  margin-bottom: 15px;
-  color: white;
-}/*# sourceMappingURL=main.css.map */
+	color: white;
+	font-size: 25px;
+	// background-color: rgb(223, 242, 255, 0.1);
+	i {
+		font-size: 30px;
+		margin-left:  50px;
+		margin-top: 15px;
+		margin-right: 20px;
+		margin-bottom: 15px; 
+		color: white;
+		}
+	}
+
+	.track-element-wrapper {
+		display: flex;
+		color: white;
+		font-size: 25px;
+		label {
+			margin-top: 1px;
+			margin-left: 20px;
+		}
+	}
