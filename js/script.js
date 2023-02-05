@@ -1,52 +1,27 @@
-fetch('https://kalafiore.github.io/json/data.json')
+fetch("https://kalafiore.github.io/json/data.json")
 	.then(response => response.json())
 	.then(json => {
-		let myData = JSON.stringify(json)
-		let table = JSON.parse(myData)
-		console.log(table);
+		let myData = JSON.stringify(json);
+		let table = JSON.parse(myData);
 
-		const accordion = document.querySelector(".accordion")
+		const listWrapper = document.querySelector('.list-wrapper');
 
 
-		////ADDING ACODRIGON
 		for (let i = 0; i < table.length; i++) {
+			const trackElementWrapper = document.createElement('div') //tworzymy wrapper dla pojedynczego tracka
+				trackElementWrapper.classList.add('track-element-wrapper')
 
-			//////ADDING TITLES
-			const titleDiv = document.createElement("div")
-			titleDiv.classList.add("accordion-item")
-			const h1 = document.createElement("h1")
-			h1.classList.add("accordion-header")
-			h1.setAttribute("id", `heading${i}`)
-			const button = document.createElement("button")
-			button.classList.add("accordion-button", "collapsed")
-			button.setAttribute("type", "button")
-			button.setAttribute("data-bs-toggle", "collapse")
-			button.setAttribute("data-bs-target", `#collapse${i}`)
-			button.setAttribute("aria-expanded", "false")
-			button.setAttribute("aria-controls", `collapse${i}`)
-			button.textContent = table[i].title
-			h1.append(button)
-			titleDiv.append(h1)
-			accordion.append(titleDiv)
-
-			/////ADDING DESCRIPTIONS
-			const descriptionDiv = document.createElement("div")
-			descriptionDiv.setAttribute("id", `collapse${i}`)
-			descriptionDiv.classList.add("accordion-collapse", "collapse")
-			descriptionDiv.setAttribute("aria-labelledby", `heading${i}`)
-			descriptionDiv.setAttribute("data-bs-parent", "#accordionExample")
-			const descriptionBody = document.createElement("div")
-			descriptionBody.classList.add("accordion-body", "description-field")
-			descriptionBody.textContent = table[i].description
-			descriptionDiv.append(descriptionBody)
-			accordion.append(descriptionDiv)
-			
-						///proba w petli
-			for (let j = 0; j < table[i].series.length; j++) {
-				const descriptionDiv2 = document.createElement("p")
-				descriptionDiv2.classList.add('container')
-				descriptionDiv2.textContent = table[i].series[j]
-				descriptionBody.append(descriptionDiv2)
-			}
+			const trackCheckbox = document.createElement("input"); //tworzy INPUTA
+				trackCheckbox.setAttribute("type", "checkbox"); //atrybuty inputa
+				trackCheckbox.setAttribute("value", `trackItem${i}`); //atrybuty inputa
+				trackCheckbox.setAttribute("id", `trackItem${i}`); // dodaje id aby polaczyc z labelem
+			//___________________________________________________________________________________czyli mamy <INPUT type="checkbox" value="trackItem(i)" id="trackItem(i)"
+			const trackLabel = document.createElement("label"); //tworzy LABEL
+				trackLabel.setAttribute("for", "trackItem${i}"); //atrybuty labela
+				trackLabel.textContent = table[i].name;
+			//___________________________________________________________________________________czyli mamy <LABEL for="trackItem(i)"> table[i].name </LABEL>
+			listWrapper.append(trackElementWrapper); //dodajemy checkbox do diva
+			trackElementWrapper.append(trackCheckbox); //dodajemy checkbox do diva
+			trackElementWrapper.append(trackLabel); // dodajemy label do diva
 		}
-	})
+});
