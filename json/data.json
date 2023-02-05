@@ -1,20 +1,20 @@
 [
     {
-        "title": "Track1",
-        "description": "link https://",
+        "name": "Track1",
+        "link": "link https://",
 
     },
     {
-        "title": "Track2",
-        "description": "link https://",
+        "name": "Track2",
+        "link": "link https://",
 
     },    {
-        "title": "Track3",
-        "description": "link https://",
+        "name": "Track3",
+        "link": "link https://",
 
     },    {
-        "title": "Track4",
-        "description": "link https://",
+        "name": "Track4",
+        "link": "link https://",
 
     },
 ]
