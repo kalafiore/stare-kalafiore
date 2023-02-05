@@ -10,37 +10,37 @@ body {
 	background-color: #333;
 	font-size: 46px;
 }
-.accordion-body {
-	background-color: lightblue;
-	border: 1px solid grey;
-	font-size: 16px;
-	color: rgb(64, 64, 64);
-	word-wrap: break-word;
-}
-
-
-.description-field {
-	background-color: white;
-}
-.accordion-button:not(.collapsed) {
-	background-color: rgb(223, 242, 255);
-	font-weight: bold;
-}
-.accordion-button:focus {
-	box-shadow:none;
-}
-
 
 .header {
 	color: white;
 	font-size: 25px;
-	// background-color: rgb(223, 242, 255, 0.1);
 	i {
 		font-size: 30px;
-		margin-left:  50px;
+		margin-left: 50px;
 		margin-top: 15px;
 		margin-right: 20px;
-		margin-bottom: 15px; 
+		margin-bottom: 15px;
 		color: white;
-		}
-	}
+ 	}
+}
+
+.track-element-wrapper {
+	display: flex;
+	color: white;
+	font-size: 25px;
+}
+
+.track-element-wrapper label {
+	margin-top: 1px;
+	margin-left: 20px;
+}
+input {
+	cursor: pointer;
+}
+
+.checked-list {
+	margin-top: 50px;
+	margin-left: 100px;
+	color: white;
+	font-size: 1rem;
+}
